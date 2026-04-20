@@ -1,9 +1,13 @@
 package com.example.crud_javasql.model;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 
-@Entity
+@Entity(name = "product")
+@Table(name = "product")
 public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String name;
     private Long price;
