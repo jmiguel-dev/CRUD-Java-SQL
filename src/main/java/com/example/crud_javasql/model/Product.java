@@ -12,8 +12,7 @@ public class Product {
     private String name;
     private Long price;
 
-    public Product(Integer id,String name,Long price) {
-        this.id = id;
+    public Product(String name,Long price) {
         this.name = name;
         this.price = price;
     }
