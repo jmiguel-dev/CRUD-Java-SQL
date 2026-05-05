@@ -7,14 +7,12 @@ import jakarta.persistence.*;
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private Long price;
 
-    public Product(String name,Long price) {
-        this.name = name;
-        this.price = price;
+    public Product() {
     }
 
     public Integer getId() {
